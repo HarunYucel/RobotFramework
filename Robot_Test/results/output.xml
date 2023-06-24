@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230406 17:31:50.476" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Test" source="C:\Users\Dell\Desktop\Software\ROBOT_FRAMEWORK\Robot_Test">
+<suite id="s1-s1" name="Tests" source="C:\Users\Dell\Desktop\Software\ROBOT_FRAMEWORK\Robot_Test\Tests">
+<suite id="s1-s1-s1" name="GalataFurniture" source="C:\Users\Dell\Desktop\Software\ROBOT_FRAMEWORK\Robot_Test\Tests\GalataFurniture.robot">
+<test id="s1-s1-s1-t1" name="Negatif login testi" line="29">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230406 17:31:51.739" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com/'.</msg>
+<status status="PASS" starttime="20230406 17:31:51.737" endtime="20230406 17:31:57.607"/>
+</kw>
+<kw name="Login linkine tikla" library="HomePage">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${loginlink}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230406 17:31:57.612" level="INFO">Clicking link '(//a[text()='Log in'])[1]'.</msg>
+<status status="PASS" starttime="20230406 17:31:57.609" endtime="20230406 17:31:58.751"/>
+</kw>
+<status status="PASS" starttime="20230406 17:31:57.608" endtime="20230406 17:31:58.752"/>
+</kw>
+<kw name="mail ve sifreyi gir" library="LoginPage">
+<arg>${gecersizEmailStr}</arg>
+<arg>${gecersizpasswordStr}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${emailInput}</arg>
+<arg>${emailStr}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 17:31:58.757" level="INFO">Typing text 'harunyucel142@gmail.com' into text field '//input[@id='CustomerForm-email']'.</msg>
+<status status="PASS" starttime="20230406 17:31:58.755" endtime="20230406 17:31:58.975"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${passwordInput}</arg>
+<arg>${passwordStr}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 17:31:58.979" level="INFO">Typing password into text field '//input[@id='CustomerForm-password']'.</msg>
+<msg timestamp="20230406 17:31:59.056" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230406 17:31:59.151" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230406 17:31:58.976" endtime="20230406 17:31:59.152"/>
+</kw>
+<status status="PASS" starttime="20230406 17:31:58.754" endtime="20230406 17:31:59.153"/>
+</kw>
+<kw name="Sigin butonuna tıkla" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signUpBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230406 17:31:59.159" level="INFO">Clicking button '(//button[@class='button button--cta button--solid'])[2]'.</msg>
+<status status="PASS" starttime="20230406 17:31:59.157" endtime="20230406 17:32:01.629"/>
+</kw>
+<status status="PASS" starttime="20230406 17:31:59.156" endtime="20230406 17:32:01.630"/>
+</kw>
+<kw name="Girisin basarısız oldugunu dogrula" library="LoginPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230406 17:32:06.634" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230406 17:32:01.633" endtime="20230406 17:32:06.634"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${errorText}</var>
+<arg>${error}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230406 17:32:06.770" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230406 17:32:06.771" level="FAIL">Element with locator '//*[text()='Incorrect email or password.']' not found.</msg>
+<status status="FAIL" starttime="20230406 17:32:06.636" endtime="20230406 17:32:06.782"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${errorText}</arg>
+<arg>Incorrect email or password.</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20230406 17:32:06.782" endtime="20230406 17:32:06.783"/>
+</kw>
+<status status="FAIL" starttime="20230406 17:32:01.631" endtime="20230406 17:32:06.784"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230406 17:32:06.791" endtime="20230406 17:32:10.262"/>
+</kw>
+<doc>Varolmayan bir mail adresi veya hatalı bir sifre ile giris yap</doc>
+<status status="FAIL" starttime="20230406 17:31:51.734" endtime="20230406 17:32:10.263">Element with locator '//*[text()='Incorrect email or password.']' not found.</status>
+</test>
+<doc>GALA FURNİTURE projesi</doc>
+<status status="FAIL" starttime="20230406 17:31:50.547" endtime="20230406 17:32:10.267"/>
+</suite>
+<status status="FAIL" starttime="20230406 17:31:50.538" endtime="20230406 17:32:10.272"/>
+</suite>
+<status status="FAIL" starttime="20230406 17:31:50.484" endtime="20230406 17:32:10.276"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot Test">Robot Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Robot Test.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="GalataFurniture">Robot Test.Tests.GalataFurniture</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

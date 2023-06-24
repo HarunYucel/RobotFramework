@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230227 10:31:06.206" rpa="false" schemaversion="3">
+<suite id="s1" name="ROBOT FRAMEWORK" source="C:\Software\ROBOT_FRAMEWORK">
+<suite id="s1-s1" name="ders04Collections" source="C:\Software\ROBOT_FRAMEWORK\ders04Collections.robot">
+<test id="s1-s1-t1" name="Koleksiyonlar" line="6">
+<kw name="Create List" library="BuiltIn">
+<var>${isimler}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230227 10:31:06.302" level="INFO">${isimler} = []</msg>
+<status status="PASS" starttime="20230227 10:31:06.301" endtime="20230227 10:31:06.304"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${isimler}</arg>
+<arg>yusuf</arg>
+<arg>Barbaros</arg>
+<arg>Salim</arg>
+<arg>ömer</arg>
+<arg>resul</arg>
+<arg>mehmet</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230227 10:31:06.306" endtime="20230227 10:31:06.307"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${i}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230227 10:31:06.310" level="INFO">${i} = 0</msg>
+<status status="PASS" starttime="20230227 10:31:06.308" endtime="20230227 10:31:06.311"/>
+</kw>
+<while condition="${i} &lt;=10">
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.315" endtime="20230227 10:31:06.317"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.319" level="INFO">${i} = 1</msg>
+<status status="PASS" starttime="20230227 10:31:06.318" endtime="20230227 10:31:06.320"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.313" endtime="20230227 10:31:06.320"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.321" endtime="20230227 10:31:06.323"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.325" level="INFO">${i} = 2</msg>
+<status status="PASS" starttime="20230227 10:31:06.323" endtime="20230227 10:31:06.325"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.320" endtime="20230227 10:31:06.326"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.332" endtime="20230227 10:31:06.334"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.337" level="INFO">${i} = 3</msg>
+<status status="PASS" starttime="20230227 10:31:06.335" endtime="20230227 10:31:06.337"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.326" endtime="20230227 10:31:06.338"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.340" endtime="20230227 10:31:06.342"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.343" level="INFO">${i} = 4</msg>
+<status status="PASS" starttime="20230227 10:31:06.342" endtime="20230227 10:31:06.348"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.338" endtime="20230227 10:31:06.348"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.349" endtime="20230227 10:31:06.352"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.354" level="INFO">${i} = 5</msg>
+<status status="PASS" starttime="20230227 10:31:06.353" endtime="20230227 10:31:06.354"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.348" endtime="20230227 10:31:06.355"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.358" endtime="20230227 10:31:06.360"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.362" level="INFO">${i} = 6</msg>
+<status status="PASS" starttime="20230227 10:31:06.361" endtime="20230227 10:31:06.364"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.355" endtime="20230227 10:31:06.365"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.367" endtime="20230227 10:31:06.368"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.371" level="INFO">${i} = 7</msg>
+<status status="PASS" starttime="20230227 10:31:06.369" endtime="20230227 10:31:06.372"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.365" endtime="20230227 10:31:06.372"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.374" endtime="20230227 10:31:06.375"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.377" level="INFO">${i} = 8</msg>
+<status status="PASS" starttime="20230227 10:31:06.376" endtime="20230227 10:31:06.378"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.372" endtime="20230227 10:31:06.378"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.382" endtime="20230227 10:31:06.384"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.386" level="INFO">${i} = 9</msg>
+<status status="PASS" starttime="20230227 10:31:06.384" endtime="20230227 10:31:06.387"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.379" endtime="20230227 10:31:06.387"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.390" endtime="20230227 10:31:06.391"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.393" level="INFO">${i} = 10</msg>
+<status status="PASS" starttime="20230227 10:31:06.392" endtime="20230227 10:31:06.394"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.388" endtime="20230227 10:31:06.394"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>While ile yazdirildi: ${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230227 10:31:06.398" endtime="20230227 10:31:06.401"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230227 10:31:06.403" level="INFO">${i} = 11</msg>
+<status status="PASS" starttime="20230227 10:31:06.401" endtime="20230227 10:31:06.403"/>
+</kw>
+<status status="PASS" starttime="20230227 10:31:06.395" endtime="20230227 10:31:06.404"/>
+</iter>
+<status status="PASS" starttime="20230227 10:31:06.313" endtime="20230227 10:31:06.404"/>
+</while>
+<status status="PASS" starttime="20230227 10:31:06.298" endtime="20230227 10:31:06.406"/>
+</test>
+<status status="PASS" starttime="20230227 10:31:06.274" endtime="20230227 10:31:06.409"/>
+</suite>
+<status status="PASS" starttime="20230227 10:31:06.215" endtime="20230227 10:31:06.419"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ROBOT FRAMEWORK">ROBOT FRAMEWORK</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ders04Collections">ROBOT FRAMEWORK.ders04Collections</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
